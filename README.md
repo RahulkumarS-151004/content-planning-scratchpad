@@ -180,3 +180,95 @@ This project focuses on clean architecture, responsible AI usage, and production
 ##  Demo Video Link
 
 https://drive.google.com/file/d/1f67-ImZkXfS0tzYewlfD4auPYONCOw--/view?usp=sharing
+
+Perfect 👍
+Below is a **READY-TO-PASTE section** you can **add to your existing `README.md`**.
+This matches exactly **what you deployed (Render + Vercel)** and sounds **professional + interview-ready**.
+
+👉 **Add this near the end of README** (after “How to run locally” or before “Final Notes”).
+
+---
+
+## Deployment 🚀
+
+This project is deployed with a separated frontend and backend setup.
+
+### Backend Deployment (Flask + SQLite)
+
+* Platform: **Render**
+* Runtime: Python
+* Server: Gunicorn
+* Database: SQLite (file-based)
+
+**Deployment Configuration**
+
+* Root directory: `backend`
+* Build command:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+* Start command:
+
+  ```bash
+  gunicorn app:app
+  ```
+
+The backend is exposed as a REST API and publicly accessible via the Render service URL.
+
+---
+
+### Frontend Deployment (React)
+
+* Platform: **Vercel**
+* Framework: Create React App
+* Root directory: `frontend`
+
+**Deployment Configuration**
+
+* Build command:
+
+  ```bash
+  npm run build
+  ```
+* Output directory:
+
+  ```bash
+  build
+  ```
+
+The frontend consumes the backend API via an environment-based configuration.
+
+---
+
+### Environment Configuration
+
+The frontend API base URL is configured using a single constant to allow easy switching between local and production environments.
+
+Example:
+
+```js
+const API_URL = "https://<your-render-backend-url>";
+```
+
+---
+
+### Live Demo
+
+* **Frontend (Live App):**
+  https://content-planning-scratchpad.vercel.app/
+
+* **Backend API:**
+https://content-planning-scratchpad.onrender.com
+
+---
+
+### Deployment Notes
+
+* Backend and frontend are deployed independently to follow best practices.
+* CORS is enabled on the backend to allow frontend communication.
+* No secrets or credentials are committed to the repository.
+* SQLite is used for simplicity, as required by the assessment scope.
+
+---
+
