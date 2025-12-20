@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import API_URL from "../config";
 
 export default function DeleteContent() {
   const [contents, setContents] = useState([]);
@@ -6,7 +7,7 @@ export default function DeleteContent() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/contents")
+    fetch(`${API_URL}/contents`)
       .then(res => res.json())
       .then(data => setContents(data));
   }, []);
@@ -26,7 +27,7 @@ export default function DeleteContent() {
     if (!confirmDelete) return;
 
     const res = await fetch(
-      `http://127.0.0.1:5000/contents/${selectedId}`,
+      `${API_URL}/contents/${selectedId}`,
       { method: "DELETE" }
     );
 

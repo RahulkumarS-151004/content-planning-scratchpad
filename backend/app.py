@@ -3,7 +3,7 @@ from flask_cors import CORS
 from models import db, Content
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///contents.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
@@ -15,9 +15,10 @@ with app.app_context():
 def home():
     return {"message": "Content Planner API Running"}
 
-@app.route('/contents', methods=['POST'])
-
+@app.route("/contents", methods=["POST", "OPTIONS"])
 def create_content():
+    if request.method == "OPTIONS":
+        return '', 200
     data = request.get_json()
     title = data.get("title")
 
@@ -81,4 +82,4 @@ def delete_content(id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
