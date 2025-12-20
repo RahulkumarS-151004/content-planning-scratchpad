@@ -1,4 +1,4 @@
-## Track Chosen + Why
+## Track Chosen 
 
 **Track A — Content Scratchpad + Planning Queue**
 
@@ -6,7 +6,7 @@ I chose this track because it closely reflects real-world content workflow tools
 
 ---
 
-## Features Implemented ✅
+## Features Implemented 
 
 * [x] Create new content ideas
 * [x] View all content ideas in a table
@@ -20,7 +20,7 @@ I chose this track because it closely reflects real-world content workflow tools
 
 ---
 
-## Tech Stack 🛠️
+## Tech Stack 
 
 **Frontend**
 
@@ -46,7 +46,7 @@ I chose this track because it closely reflects real-world content workflow tools
 
 ---
 
-## How to Run Locally ▶️
+## How to Run Locally 
 
 ### Backend
 
@@ -84,7 +84,7 @@ http://localhost:3000
 
 ---
 
-## API Endpoints List 🔌
+## API Endpoints List 
 
 | Method | Endpoint         | Description           |
 | ------ | ---------------- | --------------------- |
@@ -95,7 +95,7 @@ http://localhost:3000
 
 ---
 
-## Data Model 📊
+## Data Model 
 
 ### Table: `Content`
 
@@ -108,7 +108,7 @@ http://localhost:3000
 
 ---
 
-## AI Usage Log 🤖
+## AI Usage Log 
 
 ### AI Tool(s) Used
 
@@ -134,7 +134,7 @@ http://localhost:3000
 
 ---
 
-## Trade-offs + Next Improvements 🚀
+## Trade-offs + Next Improvements 
 
 * Pagination is not implemented due to time constraints
 * Authentication/authorization is not included
@@ -150,7 +150,7 @@ http://localhost:3000
 
 ---
 
-## Sample Data 📦
+## Sample Data 
 
 ```json
 [
@@ -171,16 +171,9 @@ http://localhost:3000
 
 ---
 
-## 🎯 Final Notes
+##  Final Notes
 
 This project focuses on clean architecture, responsible AI usage, and production-minded decisions within a strict time limit.
 
 ---
 
-If you want, I can also:
-
-* Shorten this README (if they want concise)
-* Help you record a **2–3 min demo script**
-* Prepare **interview answers based on this README**
-
-Just tell me 👍
