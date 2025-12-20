@@ -177,19 +177,7 @@ This project focuses on clean architecture, responsible AI usage, and production
 
 ---
 
-##  Demo Video Link
-
-https://drive.google.com/file/d/1f67-ImZkXfS0tzYewlfD4auPYONCOw--/view?usp=sharing
-
-Perfect 👍
-Below is a **READY-TO-PASTE section** you can **add to your existing `README.md`**.
-This matches exactly **what you deployed (Render + Vercel)** and sounds **professional + interview-ready**.
-
-👉 **Add this near the end of README** (after “How to run locally” or before “Final Notes”).
-
----
-
-## Deployment 🚀
+## Deployment 
 
 This project is deployed with a separated frontend and backend setup.
 
@@ -248,7 +236,9 @@ The frontend API base URL is configured using a single constant to allow easy sw
 Example:
 
 ```js
-const API_URL = "https://<your-render-backend-url>";
+const API_URL = "const API_URL = "https://content-planner-backend.onrender.com";
+export default API_URL;
+";
 ```
 
 ---
