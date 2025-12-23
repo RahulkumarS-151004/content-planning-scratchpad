@@ -28,7 +28,7 @@ function UpdateContent() {
             onChange={(e) => {
               axios.put(`${API_URL}/contents/${idea.id}`, {
                 status: e.target.value
-              }).then(fetchIdeas);
+              }).then(fetchIdeas,alert("Content Updated"));
             }}
           >
             <option value="Draft">Draft</option>
