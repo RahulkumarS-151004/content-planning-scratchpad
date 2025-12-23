@@ -171,11 +171,9 @@ http://localhost:3000
 
 ---
 
-##  Final Notes
+## Demo Video
 
-This project focuses on clean architecture, responsible AI usage, and production-minded decisions within a strict time limit.
-
----
+https://drive.google.com/file/d/1f67-ImZkXfS0tzYewlfD4auPYONCOw--/view?usp=sharing
 
 ## Deployment 
 
@@ -253,12 +251,4 @@ https://content-planning-scratchpad.onrender.com
 
 ---
 
-### Deployment Notes
-
-* Backend and frontend are deployed independently to follow best practices.
-* CORS is enabled on the backend to allow frontend communication.
-* No secrets or credentials are committed to the repository.
-* SQLite is used for simplicity, as required by the assessment scope.
-
----
 
